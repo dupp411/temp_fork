@@ -45,8 +45,8 @@ logger = logging.get_logger()
 
 DEFAULT_HANDLER_SERVICE = handler_service.__name__
 
-DEFAULT_HF_HUB_MODEL_EXPORT_DIRECTORY = os.path.join(os.getcwd(), ".sagemaker/mms/models")
-DEFAULT_MODEL_STORE = "/"
+DEFAULT_HF_HUB_MODEL_EXPORT_DIRECTORY = os.path.join("/tmp", ".sagemaker/mms/models")
+DEFAULT_MODEL_STORE = "/tmp"
 
 
 def start_model_server(handler_service=DEFAULT_HANDLER_SERVICE):
